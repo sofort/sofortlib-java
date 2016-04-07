@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<transactions>
+  <transaction_details version="2">
+    <project_id>1234</project_id>
+    <transaction>12345-67890-A1B2C3D4-E5F6</transaction>
+    <test>1</test>
+    <time>2013-03-20T11:23:21+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-03-20T11:23:21+01:00</status_modified>
+    <payment_method>billcode</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>Sofort billcode Test</reason>
+      <reason>Test billcode Sofort</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>BIC1BIC2</bic>
+      <iban>DE4912345678901234567890</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Max Mustermann</holder>
+      <account_number>1234567890</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC1BIC2</bic>
+      <iban>DE4912345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <billcode>
+      <code>1234567890</code>
+    </billcode>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-03-20T11:23:21+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+</transactions>

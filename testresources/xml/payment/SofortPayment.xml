@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multipay>
+  <project_id>1383</project_id>
+  <interface_version>pn_test_1</interface_version>
+  <language_code>DE</language_code>
+  <timeout>0</timeout>
+  <email_customer>ach@och.uch</email_customer>
+  <phone_customer>4711 0815</phone_customer>
+  <user_variables>
+    <user_variable>1234</user_variable>
+    <user_variable>absd</user_variable>
+  </user_variables>
+  <sender>
+    <holder>Max Mustermann</holder>
+    <account_number>A1B2C3D4</account_number>
+    <bank_code>XYZA1234</bank_code>
+    <country_code>ZZ</country_code>
+    <iban>ZZ9912345678901234567890</iban>
+    <bic>ZBZBZBZB</bic>
+  </sender>
+  <amount>2.2</amount>
+  <currency_code>EUR</currency_code>
+  <reasons>
+    <reason>a b c d e f g h</reason>
+    <reason>z z z z z z z</reason>
+  </reasons>
+  <success_url>https://success.url</success_url>
+  <abort_url>https://abort.url</abort_url>
+  <timeout_url>https://timeout.url</timeout_url>
+  <notification_emails>
+    <notification_email>a@b.c</notification_email>
+    <notification_email>d@e.f</notification_email>
+    <notification_email>g@h.j</notification_email>
+  </notification_emails>
+  <su>
+    <customer_protection>1</customer_protection>
+  </su>
+</multipay>

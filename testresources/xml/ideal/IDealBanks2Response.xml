@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ideal>
+  <banks>
+    <bank>
+      <code>ABNANL2A</code>
+      <name>ABN Amro</name>
+    </bank>
+    <bank>
+      <code>FRBKNL2L</code>
+      <name>Friesland Bank</name>
+    </bank>
+    <bank>
+      <code>INGBNL2A</code>
+      <name>ING</name>
+    </bank>
+    <bank>
+      <code>RABONL2U</code>
+      <name>Rabobank</name>
+    </bank>
+    <bank>
+      <code>SNSBNL2A</code>
+      <name>SNS Bank</name>
+    </bank>
+    <bank>
+      <code>ASNBNL21</code>
+      <name>ASN Bank</name>
+    </bank>
+    <bank>
+      <code>KNABNL2H</code>
+      <name>Knab</name>
+    </bank>
+    <bank>
+      <code>RBRBNL21</code>
+      <name>RegioBank</name>
+    </bank>
+    <bank>
+      <code>TRIONL2U</code>
+      <name>Triodos Bank</name>
+    </bank>
+    <bank>
+      <code>FVLBNL22</code>
+      <name>Van Lanschot Bankiers</name>
+    </bank>
+  </banks>
+</ideal>

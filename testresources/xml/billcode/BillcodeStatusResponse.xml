@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<billcode_details>
+  <status>open</status>
+  <billcode>1234567890</billcode>
+  <project_id>1234</project_id>
+  <transaction>00002-20000-A1B2C3D4-E5F6</transaction>
+  <amount>2.20</amount>
+  <reasons>
+    <reason>Sofort billcode Test</reason>
+    <reason>Test billcode Sofort</reason>
+  </reasons>
+  <time_created>2013-03-20T11:23:21+01:00</time_created>
+  <time_used>2013-07-20T11:23:21+02:00</time_used>
+  <start_date>2013-11-19T11:23:21+01:00</start_date>
+  <end_date>2013-11-20T11:23:21+01:00</end_date>
+  <currency_code>EUR</currency_code>
+  <language_code>de</language_code>
+  <sender>
+    <bank_code>00000</bank_code>
+    <bic>BIC1BIC2</bic>
+    <country_code>DE</country_code>
+  </sender>
+  <user_variables />
+</billcode_details>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<refunds>
+  <sender>
+    <holder>Max Mustermann</holder>
+    <bank_name>Test Bank</bank_name>
+    <iban>9999999999</iban>
+    <bic>88888888</bic>
+  </sender>
+  <title>Multipay API-Rückbuchung vom YYYY-MM-DD</title>
+  <dta>0128AGK8888888800000000MAX MUSTERMANN 220313 99999999990000000000 10216C88888888000000000023456789000000000000051000
+    0000000000088888888999999999900099999999 MAX MUSTERMANN MAX MUSTERMANN SU TESTUEBERWEISUNG 1 0102TEST VZ 0216C88888888000000000023456789000000000000051000
+    0000000000088888888999999999900000000050 MAX MUSTERMANN MAX MUSTERMANN 1ST REASON 1 01022ND REASON 0128E
+    0000002000000000000000000000046913578000000000000000000000100000049
+  </dta>
+  <refund>
+    <transaction>00907-01737-5127A100-7FD1</transaction>
+    <amount>0.5</amount>
+    <comment>partial refund</comment>
+    <reason_1>1st Reason</reason_1>
+    <reason_2>2nd Reason</reason_2>
+    <partial_refund_id>xyz</partial_refund_id>
+    <status>ok</status>
+  </refund>
+  <pain>Tm8gcGFpbiwgbm8gZ2FpbiE=</pain>
+</refunds>

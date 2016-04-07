@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction_request version="2">
+  <from_time>%s</from_time>
+  <to_time>%s</to_time>
+  <number>35</number>
+  <product>payment</product>
+</transaction_request>

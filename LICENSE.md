@@ -1,4 +1,4 @@
-Copyright (c) 2010-2016 SOFORT GmbH
+Copyright (c) 2014-2016 SOFORT GmbH
 
 Released under the GNU LESSER GENERAL PUBLIC LICENSE
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction_request version="2.0">
+  <from_time>2011-10-09T00:00:00+02:00</from_time>
+  <to_time>2011-10-09T23:59:59+02:00</to_time>
+  <number>20</number>
+  <page>1</page>
+</transaction_request>

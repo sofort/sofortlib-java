@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<transactions>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-D995</transaction>
+    <test>1</test>
+    <time>2013-02-22T13:55:32+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T13:55:32+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01234 / 5678 - 910,911</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T13:55:32+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-C51B</transaction>
+    <test>1</test>
+    <time>2013-02-22T14:09:10+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T14:09:10+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T14:09:10+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-F9B8</transaction>
+    <test>1</test>
+    <time>2013-02-22T14:26:52+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T14:26:52+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T14:26:52+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-D57A</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:14:32+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:14:32+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:14:32+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-58DE</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:17:26+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:17:26+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:17:26+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-841E</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:26:53+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:26:53+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:26:53+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-99E7</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:31:21+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:31:21+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:31:22+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-20BD</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:32:41+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:32:41+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:32:41+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-E0F3</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:33:30+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:33:30+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:33:30+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-D493</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:36:08+01:00</time>
+    <status>received</status>
+    <status_reason>credited</status_reason>
+    <status_modified>2013-03-04T13:41:15+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:36:08+01:00</time>
+      </status_history_item>
+      <status_history_item>
+        <status>received</status>
+        <status_reason>credited</status_reason>
+        <time>2013-03-04T13:41:15+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-CBF9</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:37:57+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:37:57+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic />
+      <iban />
+      <country_code>GB</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:37:57+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-FFD5</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:39:18+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:39:18+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:39:18+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-723D</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:40:09+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:40:09+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:40:09+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-7276</transaction>
+    <test>1</test>
+    <time>2013-02-22T15:42:06+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T15:42:06+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic />
+      <iban />
+      <country_code>GB</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T15:42:06+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-847F</transaction>
+    <test>1</test>
+    <time>2013-02-22T16:16:01+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T16:16:01+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T16:16:02+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-BC5F</transaction>
+    <test>1</test>
+    <time>2013-02-22T16:17:06+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T16:17:06+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T16:17:06+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-9635</transaction>
+    <test>1</test>
+    <time>2013-02-22T16:18:51+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T16:18:51+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T16:18:51+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-AB45</transaction>
+    <test>1</test>
+    <time>2013-02-22T16:26:06+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T16:26:06+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T16:26:06+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-E2C1</transaction>
+    <test>1</test>
+    <time>2013-02-22T17:42:47+01:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-02-22T17:42:46+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T17:42:47+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1737</project_id>
+    <transaction>12345-67890-A1B2C3D4-7FD1</transaction>
+    <test>1</test>
+    <time>2013-02-22T17:47:07+01:00</time>
+    <status>received</status>
+    <status_reason>credited</status_reason>
+    <status_modified>2013-02-25T10:43:15+01:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>SU Testueberweisung</reason>
+      <reason>Test VZ</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code>00000</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>PNAGDE00000</bic>
+      <iban>DE06000000000023456789</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer>01223 / 4654 - 130,134</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-02-22T17:47:08+01:00</time>
+      </status_history_item>
+      <status_history_item>
+        <status>received</status>
+        <status_reason>credited</status_reason>
+        <time>2013-02-25T10:43:16+01:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+</transactions>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>
+    <code>7000</code>
+    <message>&gt; required. line: 7, char: 42, tag: transaction_request</message>
+  </error>
+</errors>

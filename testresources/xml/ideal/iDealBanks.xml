@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ideal>
+  <banks>
+    <bank>
+      <code>0031</code>
+      <name>ABN Amro</name>
+    </bank>
+    <bank>
+      <code>0091</code>
+      <name>Friesland Bank</name>
+    </bank>
+    <bank>
+      <code>0721</code>
+      <name>ING</name>
+    </bank>
+    <bank>
+      <code>0021</code>
+      <name>Rabobank</name>
+    </bank>
+    <bank>
+      <code>0751</code>
+      <name>SNS Bank</name>
+    </bank>
+    <bank>
+      <code>0761</code>
+      <name>ASN Bank</name>
+    </bank>
+    <bank>
+      <code>0801</code>
+      <name>Knab</name>
+    </bank>
+    <bank>
+      <code>0771</code>
+      <name>RegioBank</name>
+    </bank>
+    <bank>
+      <code>0511</code>
+      <name>Triodos Bank</name>
+    </bank>
+    <bank>
+      <code>0161</code>
+      <name>Van Lanschot Bankiers</name>
+    </bank>
+  </banks>
+</ideal>

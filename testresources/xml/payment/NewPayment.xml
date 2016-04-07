@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<new_transaction>
+  <transaction>1-2-3-4-5-6</transaction>
+  <payment_url>https://sofort.com/su/1-2-3-4-5-6</payment_url>
+  <warnings>
+    <warning>
+      <code>4711</code>
+      <message>0815 Message</message>
+    </warning>
+  </warnings>
+</new_transaction>

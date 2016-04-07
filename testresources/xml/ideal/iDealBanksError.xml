@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>
+    <code>1000</code>
+    <message>Invalid request.</message>
+  </error>
+</errors>

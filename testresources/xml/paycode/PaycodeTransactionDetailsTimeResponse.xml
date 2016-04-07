@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<transactions>
+  <transaction_details>
+    <project_id>12345</project_id>
+    <transaction>00000-12345-A1B2C3D4-BE0F</transaction>
+    <test>1</test>
+    <time>2013-08-29T13:24:58+02:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-08-29T13:24:58+02:00</status_modified>
+    <payment_method>paycode</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>a b c d e f g h</reason>
+      <reason>z z z z z z z</reason>
+    </reasons>
+    <user_variables>
+      <user_variable>1337</user_variable>
+      <user_variable>LEET</user_variable>
+    </user_variables>
+    <sender>
+      <holder>Muster Maxmann</holder>
+      <account_number>0</account_number>
+      <bank_code></bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <recipient>
+      <holder>Maximillian Muster</holder>
+      <account_number>0987654321</account_number>
+      <bank_code></bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ2123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <email_customer />
+    <phone_customer />
+    <exchange_rate>1.0000</exchange_rate>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <paycode>
+      <code>a1b2c3e4f5</code>
+    </paycode>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-08-29T13:24:59+02:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>12345</project_id>
+    <transaction>00000-12345-A1B2C3D4-8182</transaction>
+    <test>1</test>
+    <time>2013-08-29T17:04:22+02:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-08-29T17:04:21+02:00</status_modified>
+    <payment_method>paycode</payment_method>
+    <language_code>de</language_code>
+    <amount>2.20</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>a b c d e f g h</reason>
+      <reason>z z z z z z z</reason>
+    </reasons>
+    <user_variables>
+      <user_variable>1337</user_variable>
+      <user_variable>LEET</user_variable>
+    </user_variables>
+    <sender>
+      <holder>A B C</holder>
+      <account_number>87654321</account_number>
+      <bank_code></bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <recipient>
+      <holder>Maximillian Muster</holder>
+      <account_number>1234567890</account_number>
+      <bank_code>50050050</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <email_customer />
+    <phone_customer />
+    <exchange_rate>1.0000</exchange_rate>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <paycode>
+      <code>abcdefghij</code>
+    </paycode>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-08-29T17:04:22+02:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+  <transaction_details>
+    <project_id>12345</project_id>
+    <transaction>00000-12345-A1B2C3D4-4381</transaction>
+    <test>1</test>
+    <time>2013-08-29T18:04:16+02:00</time>
+    <status>pending</status>
+    <status_reason>not_credited_yet</status_reason>
+    <status_modified>2013-08-29T18:04:16+02:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>de</language_code>
+    <amount>99.00</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>Steve Stevo Steva</reason>
+      <reason>Progress Bar</reason>
+    </reasons>
+    <user_variables>
+      <user_variable>USER_VARIABLE_1</user_variable>
+      <user_variable>USER_VARIABLE_2</user_variable>
+      <user_variable>USER_VARIABLE_3</user_variable>
+    </user_variables>
+    <sender>
+      <holder>Max Mustermann</holder>
+      <account_number>23456789</account_number>
+      <bank_code></bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </sender>
+    <recipient>
+      <holder>Hans Wurst</holder>
+      <account_number>100200007</account_number>
+      <bank_code>50050050</bank_code>
+      <bank_name>Demo Bank</bank_name>
+      <bic>ABCDEFGHIJK</bic>
+      <iban>ZZ123456789012345678901234</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <email_customer>ab@c.de</email_customer>
+    <phone_customer>01234567</phone_customer>
+    <exchange_rate>1.0000</exchange_rate>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <su>
+      <consumer_protection>0</consumer_protection>
+    </su>
+    <status_history_items>
+      <status_history_item>
+        <status>pending</status>
+        <status_reason>not_credited_yet</status_reason>
+        <time>2013-08-29T18:04:16+02:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+</transactions>

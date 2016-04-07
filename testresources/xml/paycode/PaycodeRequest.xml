@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paycode>
+  <project_id>1234</project_id>
+  <interface_version>paycode_test_1</interface_version>
+  <language_code>DE</language_code>
+  <start_date>2013-08-22 01:02:03</start_date>
+  <end_date>2013-08-23 01:02:03</end_date>
+  <amount>2.2</amount>
+  <currency_code>EUR</currency_code>
+  <sender>
+    <bank_code>XYZA1234</bank_code>
+    <bic>BIC1BIC2</bic>
+    <country_code>DE</country_code>
+  </sender>
+  <reasons>
+    <reason>a b c d e f g h</reason>
+    <reason>z z z z z z z</reason>
+  </reasons>
+  <success_url>http://shop.com/success</success_url>
+  <success_link_redirect>1</success_link_redirect>
+  <abort_url>http://shop.com/abort</abort_url>
+  <notification_urls>
+    <notification_url>http://shop.com/notify</notification_url>
+  </notification_urls>
+  <notification_emails>
+    <notification_email notify_on="loss">api@domain.com</notification_email>
+    <notification_email notify_on="pending,refunded">api@domain.de</notification_email>
+    <notification_email>api@domain.net</notification_email>
+  </notification_emails>
+  <user_variables>
+    <user_variable>1337</user_variable>
+    <user_variable>LEET</user_variable>
+  </user_variables>
+</paycode>

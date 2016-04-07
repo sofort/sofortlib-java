@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<new_transaction>
+  <transaction>00001-10000-A1B2C3D4-E5F6</transaction>
+  <payment_url>https://domain.com/payment/go/00001-10000-A1B2C3D4-E5F6</payment_url>
+</new_transaction>

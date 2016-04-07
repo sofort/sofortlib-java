@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<new_billcode>
+  <billcode>1234567890</billcode>
+  <billcode_url>https://domain.com/billcode/1234567890</billcode_url>
+  <warnings>
+    <warning>
+      <code>4711</code>
+      <field>Field 123</field>
+      <message>0815 Message</message>
+    </warning>
+  </warnings>
+</new_billcode>

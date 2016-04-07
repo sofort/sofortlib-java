@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refunds>
+  <title>Refund 4711</title>
+  <sender>
+    <holder>Max Mix</holder>
+    <iban>9999999999</iban>
+    <bic>88888888</bic>
+  </sender>
+  <refund>
+    <transaction>1-2-3-4-5-6</transaction>
+    <amount>47.11</amount>
+    <comment>niff-niff</comment>
+  </refund>
+  <refund>
+    <transaction>7-8-9-a-b-c</transaction>
+    <amount>8.15</amount>
+    <comment>naff-naff</comment>
+  </refund>
+  <refund>
+    <transaction>a-b-c-d-e-f</transaction>
+    <amount>50.0</amount>
+  </refund>
+</refunds>

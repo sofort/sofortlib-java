@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction_request version="2.0">
+  <from_time>2012-01-01T00:00:00+01:00</from_time>
+  <to_time>2012-12-31T23:59:59+01:00</to_time>
+  <status>pending</status>
+  <number>1000</number>
+  <page>1</page>
+  <product>billcode</product>
+</transaction_request>

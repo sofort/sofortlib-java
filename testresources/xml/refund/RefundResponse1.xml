@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<refunds>
+  <title>test</title>
+  <sender>
+    <holder>Max Mustermann</holder>
+    <bank_name>Test Bank</bank_name>
+    <iban>9999999999</iban>
+    <bic>88888888</bic>
+  </sender>
+  <refund>
+    <transaction>00000-00000-00000000-0000</transaction>
+    <amount>1.11</amount>
+    <comment>Order cancelled by user. Commodities already sent back</comment>
+    <status>ok</status>
+  </refund>
+  <refund>
+    <transaction>00000-00000-00000000-0001</transaction>
+    <amount>1.12</amount>
+    <status>error</status>
+    <errors>
+      <error>
+        <code>5002</code>
+        <message>Transaction not found</message>
+      </error>
+    </errors>
+  </refund>
+  <pain>Tm8gcGFpbiwgbm8gZ2FpbiE=</pain>
+</refunds>

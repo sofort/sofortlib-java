@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transactions>
+  <transaction_details>
+    <project_id>1222</project_id>
+    <transaction>00907-01222-4CAC6137-7437</transaction>
+    <test>0</test>
+    <time>2010-10-06T13:44:55+02:00</time>
+    <status>loss</status>
+    <status_reason>not_credited</status_reason>
+    <status_modified>2011-04-05T18:06:03+02:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>en</language_code>
+    <amount>4.34</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>Default Testüberweisung1</reason>
+      <reason>Default Testüberweisung2</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder />
+      <account_number />
+      <bank_code>50050500</bank_code>
+      <bank_name />
+      <bic />
+      <iban />
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer />
+    <exchange_rate>0.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <status_history_items>
+      <status_history_item>
+        <status>loss</status>
+        <status_reason>not_credited</status_reason>
+        <time>2011-04-05T18:06:03+02:00</time>
+      </status_history_item>
+    </status_history_items>
+    <su>
+      <consumer_protection>1</consumer_protection>
+    </su>
+  </transaction_details>
+  <transaction_details>
+    <project_id>1222</project_id>
+    <transaction>00907-01222-4CAC79C4-A10D</transaction>
+    <test>0</test>
+    <time>2010-10-06T15:29:40+02:00</time>
+    <status>loss</status>
+    <status_reason>not_credited</status_reason>
+    <status_modified>2011-04-05T18:06:03+02:00</status_modified>
+    <payment_method>su</payment_method>
+    <language_code>en</language_code>
+    <amount>4.34</amount>
+    <amount_refunded>0.00</amount_refunded>
+    <currency_code>EUR</currency_code>
+    <reasons>
+      <reason>Default Testüberweisung1</reason>
+      <reason>Default Testüberweisung2</reason>
+    </reasons>
+    <user_variables />
+    <sender>
+      <holder />
+      <account_number />
+      <bank_code>51390000</bank_code>
+      <bank_name />
+      <bic />
+      <iban />
+      <country_code>DE</country_code>
+    </sender>
+    <email_customer>foobar@example.org</email_customer>
+    <phone_customer />
+    <exchange_rate>0.0000</exchange_rate>
+    <recipient>
+      <holder>Jan Pan</holder>
+      <account_number>12345678</account_number>
+      <bank_code>50050500</bank_code>
+      <bank_name>Bank Bank</bank_name>
+      <bic>BIC12BIC12</bic>
+      <iban>DE12345678901234567890</iban>
+      <country_code>DE</country_code>
+    </recipient>
+    <costs>
+      <fees>0.00</fees>
+      <currency_code>EUR</currency_code>
+      <exchange_rate>1.0000</exchange_rate>
+    </costs>
+    <status_history_items>
+      <status_history_item>
+        <status>loss</status>
+        <status_reason>not_credited</status_reason>
+        <time>2011-04-05T18:06:03+02:00</time>
+      </status_history_item>
+    </status_history_items>
+  </transaction_details>
+</transactions>

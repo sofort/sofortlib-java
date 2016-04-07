@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refunds>
+  <sender>
+    <holder>Max Mustermann</holder>
+    <bank_name>Test Bank</bank_name>
+    <iban>9999999999</iban>
+    <bic>88888888</bic>
+  </sender>
+  <title>Multipay API-Rückbuchung vom YYYY-MM-DD</title>
+  <refund>
+    <transaction>00000-00000-00000000-0001</transaction>
+    <amount>0.50</amount>
+    <comment>partial refund</comment>
+    <reason_1>1st Reason</reason_1>
+    <reason_2>2nd Reason</reason_2>
+    <partial_refund_id>xyz</partial_refund_id>
+    <status>error</status>
+    <errors>
+      <error>
+        <code>5002</code>
+        <message>Transaction could not be found.</message>
+      </error>
+    </errors>
+  </refund>
+  <pain>Tm8gcGFpbiwgbm8gZ2FpbiE=</pain>
+</refunds>

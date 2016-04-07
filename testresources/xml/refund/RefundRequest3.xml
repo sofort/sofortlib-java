@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refunds>
+  <title>Multipay API-Rückbuchung vom YYYY-MM-DD</title>
+  <refund>
+    <transaction>00000-00000-00000000-0001</transaction>
+    <amount>0.5</amount>
+    <comment>partial refund</comment>
+    <reason_1>1st Reason</reason_1>
+    <reason_2>2nd Reason</reason_2>
+    <partial_refund_id>xyz</partial_refund_id>
+  </refund>
+</refunds>

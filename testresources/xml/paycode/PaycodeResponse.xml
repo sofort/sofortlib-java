@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<new_paycode>
+  <paycode>1234567890</paycode>
+  <paycode_url>https://domain.com/paycode/1234567890</paycode_url>
+  <warnings>
+    <warning>
+      <code>4711</code>
+      <field>Field 123</field>
+      <message>0815 Message</message>
+    </warning>
+  </warnings>
+</new_paycode>

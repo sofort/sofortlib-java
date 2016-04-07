@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<errors>
+  <error>
+    <code>7999</code>
+    <field>limit</field>
+    <message>Out of range.</message>
+  </error>
+  <error>
+    <code>8009</code>
+    <field>from_time</field>
+    <message>Max date range of 30 days exceeded.</message>
+  </error>
+  <error>
+    <code>8009</code>
+    <field>to_time</field>
+    <message>Max date range of 30 days exceeded.</message>
+  </error>
+</errors>

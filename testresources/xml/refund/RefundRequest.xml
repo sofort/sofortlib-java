@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refunds version="3.0">
+  <title>Multipay API-Rückbuchung vom YYYY-MM-DD</title>
+  <sender>
+    <holder>Max Mustermann</holder>
+    <iban>9999999999</iban>
+    <bic>88888888</bic>
+  </sender>
+  <refund>
+    <transaction>00002-20000-A1B2C3D4-E5F6</transaction>
+    <amount>0.5</amount>
+    <comment>partial refund 2</comment>
+    <reason_1>1st Reason</reason_1>
+    <reason_2>2nd Reason</reason_2>
+    <partial_refund_id>xyz</partial_refund_id>
+  </refund>
+</refunds>
