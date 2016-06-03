@@ -22,10 +22,20 @@ The following SOFORT products are currently supported by the SofortLibJava:
 ### Testing
 
 To run the testsuite:
-
 ```
 ./gradlew check
 ```
+
+### Integration
+
+sofortlib-java is available on maven central.
+```
+http://search.maven.org/#search|ga|1|sofortlib-java
+```
+
+### Examples of usage
+
+Examples of usage of products can be found in the "examples" source folder.
 
 
 ## German Version
@@ -46,3 +56,21 @@ Folgende SOFORT Produkte werden aktuell von der SofortLibJava unterstützt:
 3. SOFORT Überweisung Billcode
 4. Rückbuchungen (Refund)
 5. iDEAL
+
+### Testing
+
+To run the testsuite:
+```
+./gradlew check
+```
+
+### Integration
+
+sofortlib-java is verfügbar auf maven central:
+```
+http://search.maven.org/#search|ga|1|sofortlib-java
+```
+
+### Beispiele
+
+Die Beispiele zum Nutzen von eizelnen Produkten liegen in dem "examples" Verzeichnis.
