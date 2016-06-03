@@ -1,4 +1,6 @@
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'signing'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -8,12 +10,15 @@ compileTestJava.options.encoding = 'UTF-8'
 
 sourceSets {
 	main { 
-		java { srcDirs 'src' } 
+		java { srcDirs 'src' }
 		resources { srcDirs 'resources' }
 	}
 	test {
 		java { srcDirs 'tests' }
 		resources { srcDirs 'testresources' }
+	}
+	examples {
+		java { srcDirs 'examples' }
 	}
 }
 
@@ -22,11 +27,12 @@ repositories {
 }
 
 group = 'com.sofort'
-version = '1.0.4'
-	
+version = '1.0.5'
+archivesBaseName = "sofortlib-java"
+
 dependencies {
 	compile(group: 'commons-logging', name: 'commons-logging', version: '1.2')
-	runtime(group: 'log4j', name: 'log4j', version: '1.2.17')
+	testRuntime(group: 'log4j', name: 'log4j', version: '1.2.17')
 	testCompile(group: 'org.testng', name: 'testng', version: '6.8.8')
 }
 
@@ -69,4 +75,58 @@ buildAll.dependsOn javadocJar
 
 task wrapper(type: Wrapper) {
   gradleVersion = "2.5"
+}
+
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+signing {
+    sign configurations.archives
+}
+
+uploadArchives {
+  repositories {
+    mavenDeployer {
+      beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+        authentication(userName: ossrhUsername, password: ossrhPassword)
+      }
+
+      pom.project {
+        name 'sofortlib-java'
+        packaging 'jar'
+        description 'sofortlib-java offers a collection of java tools needed to communicate with the SOFORT API.'
+        url 'https://github.com/sofort/sofortlib-java'
+
+        scm {
+          connection 'scm:git:git@github.com:sofort/sofortlib-java.git'
+          developerConnection 'scm:git:git@github.com:sofort/sofortlib-java.git'
+          url 'git@github.com:sofort/sofortlib-java.git'
+        }
+
+        licenses {
+          license {
+            name 'GNU LESSER GENERAL PUBLIC LICENSE'
+            url 'http://www.gnu.org/licenses/lgpl.html'
+          }
+        }
+
+        developers {
+          developer {
+            id developerId
+            name developerName
+            email developerEmail
+            organization developerOrganization
+            organizationUrl developerOrganizationUrl
+          }
+        }
+      }
+    }
+  }
 }
