@@ -3,4 +3,4 @@ language: java
 jdk:
     - oraclejdk8
 
-script: ./gradlew -PossrhUsername=x -PossrhPassword=x -PdeveloperId=x -PdeveloperName=x -PdeveloperEmail=x -PdeveloperOrganization=x -PdeveloperOrganizationUrl=x check
+script: ./gradlew check
