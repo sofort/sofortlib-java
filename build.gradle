@@ -82,7 +82,8 @@ artifacts {
 }
 
 signing {
-    sign configurations.archives
+  required { project.hasProperty('signing.keyId') }
+  sign configurations.archives
 }
 
 uploadArchives {
