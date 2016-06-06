@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
+import java.util.Collection;
 
 import javax.xml.bind.DatatypeConverter;
 
@@ -83,4 +84,29 @@ public class StringUtilities {
 		}
 	}
 
+
+	/**
+	 * Converts a list of Object to one String using the given separator.
+	 * 
+	 * @param col
+	 *            a collection. Elements must have implemented the toString()
+	 * @param separator
+	 *            a separator inserted between
+	 * @return a string with separated String interpretations of elements
+	 */
+	public String glue(Collection<?> col, String separator) {
+
+		StringBuilder sb = new StringBuilder();
+		for (Object o : col) {
+
+			if (sb.length() > 0) {
+				sb.append(separator);
+			}
+
+			sb.append(o.toString());
+
+		}
+
+		return sb.toString();
+	}
 }
