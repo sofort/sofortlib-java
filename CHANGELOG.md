@@ -1,5 +1,11 @@
 #### SofortLibJava @ 2014-2016 SOFORT GmbH
 
+June 2016:
+-----------
+
+* extended examples of usage
+* new release 1.0.5
+
 April 2016:
 -----------
 
