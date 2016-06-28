@@ -27,7 +27,7 @@ repositories {
 }
 
 group = 'com.sofort'
-version = '1.0.5'
+version = '1.0.6'
 archivesBaseName = "sofortlib-java"
 
 dependencies {

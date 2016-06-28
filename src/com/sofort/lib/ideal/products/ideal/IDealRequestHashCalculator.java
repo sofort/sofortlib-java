@@ -2,6 +2,7 @@ package com.sofort.lib.ideal.products.ideal;
 
 import com.sofort.lib.core.internal.utils.HashAlgorithm;
 import com.sofort.lib.core.internal.utils.HashBuilder;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.ideal.products.request.IDealRequest;
 
 
@@ -50,7 +51,7 @@ public class IDealRequestHashCalculator {
 		append(request.getSenderAccountNumber());
 		append(request.getSenderBankCode());
 		append(request.getSenderCountryId());
-		append(String.valueOf(request.getAmount()));
+		append(new NumberUtilities().formatAmount(request.getAmount()));
 		append(request.getReason1());
 		append(request.getReason2());
 		append(request.getUserVariable0());

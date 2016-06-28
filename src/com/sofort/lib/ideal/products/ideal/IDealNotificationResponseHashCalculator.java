@@ -2,6 +2,7 @@ package com.sofort.lib.ideal.products.ideal;
 
 import com.sofort.lib.core.internal.utils.HashAlgorithm;
 import com.sofort.lib.core.internal.utils.HashBuilder;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.ideal.products.response.IDealNotificationResponse;
 
 
@@ -60,7 +61,7 @@ public class IDealNotificationResponseHashCalculator {
 		append(notification.getRecepientBankBic());
 		append(notification.getRecepientIban());
 		append(notification.getRecepientCountryId());
-		append(String.valueOf(notification.getAmount()));
+		append(new NumberUtilities().formatAmount(notification.getAmount()));
 		append(notification.getCurrencyId());
 		append(notification.getReason1());
 		append(notification.getReason2());
