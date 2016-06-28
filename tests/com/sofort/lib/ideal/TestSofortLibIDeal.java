@@ -15,7 +15,6 @@ import com.sofort.lib.core.internal.transformer.DataHandler;
 import com.sofort.lib.core.internal.transformer.xml.XmlDataHandler;
 import com.sofort.lib.core.internal.transformer.xml.XmlRootEntry;
 import com.sofort.lib.core.internal.utils.HashAlgorithm;
-import com.sofort.lib.ideal.SofortLibIDeal;
 import com.sofort.lib.ideal.internal.transformer.xml.XmlConfigIDeal;
 import com.sofort.lib.ideal.products.request.IDealBanksRequest;
 import com.sofort.lib.ideal.products.request.IDealRequest;
@@ -161,7 +160,6 @@ public class TestSofortLibIDeal {
 		IDealRequest request = new IDealRequest()
 				.setUserId(1010)
 				.setProjectId(4808)
-				.setAmount(1.23)
 				.setReason1("äÄöÖüÜß ÀàÂâÆæ")
 				.setReason2("ÇçÉéÈèÊêËëÏïÎîÔôŒœÙùÛûŸÿ")
 				.setUserVariable0("0th user variable")
@@ -178,11 +176,21 @@ public class TestSofortLibIDeal {
 				.setInterfaceTimeout(600)
 				.setInterfaceVersion("TEST iDeal Interface");
 
+		request.setAmount(0.1);
+
 		String hash = sofortLib.calculateHash(request, "53(UR3");
-		assertEquals("d61b20487f7f49f1c7a99e413b21e342d3015145", hash);
+		assertEquals("34819b09587126af6a5a5d1c7bb3f6d3b251db01", hash);
 
 		String paymentUrl = sofortLib.getPaymentUrl(request, "53(UR3");
-		assertEquals("https://s0f0rt/payment/ideal/?user_id=1010&project_id=4808&amount=1.23&reason_1=%C3%A4%C3%84%C3%B6%C3%96%C3%BC%C3%9C%C3%9F+%C3%80%C3%A0%C3%82%C3%A2%C3%86%C3%A6&reason_2=%C3%87%C3%A7%C3%89%C3%A9%C3%88%C3%A8%C3%8A%C3%AA%C3%8B%C3%AB%C3%8F%C3%AF%C3%8E%C3%AE%C3%94%C3%B4%C5%92%C5%93%C3%99%C3%B9%C3%9B%C3%BB%C5%B8%C3%BF&user_variable_0=0th+user+variable&user_variable_1=1st+user+variable&user_variable_2=2nd+user+variable&user_variable_3=3rd+user+variable&user_variable_4=4th+user+variable&user_variable_5=5th+user+variable&sender_bank_code=0021&sender_account_number=123456789&sender_holder=Kaiser+van+der+Haalz&sender_country_id=NL&hash=d61b20487f7f49f1c7a99e413b21e342d3015145&language_id=NL&interface_timeout=600&interface_version=TEST+iDeal+Interface", paymentUrl);
+		assertEquals("https://s0f0rt/payment/ideal/?user_id=1010&project_id=4808&amount=0.10&reason_1=%C3%A4%C3%84%C3%B6%C3%96%C3%BC%C3%9C%C3%9F+%C3%80%C3%A0%C3%82%C3%A2%C3%86%C3%A6&reason_2=%C3%87%C3%A7%C3%89%C3%A9%C3%88%C3%A8%C3%8A%C3%AA%C3%8B%C3%AB%C3%8F%C3%AF%C3%8E%C3%AE%C3%94%C3%B4%C5%92%C5%93%C3%99%C3%B9%C3%9B%C3%BB%C5%B8%C3%BF&user_variable_0=0th+user+variable&user_variable_1=1st+user+variable&user_variable_2=2nd+user+variable&user_variable_3=3rd+user+variable&user_variable_4=4th+user+variable&user_variable_5=5th+user+variable&sender_bank_code=0021&sender_account_number=123456789&sender_holder=Kaiser+van+der+Haalz&sender_country_id=NL&hash=" + hash + "&language_id=NL&interface_timeout=600&interface_version=TEST+iDeal+Interface", paymentUrl);
+
+		request.setAmount(1);
+
+		hash = sofortLib.calculateHash(request, "53(UR3");
+		assertEquals("ac80d9540572de8bbb3519328360698fef98b81c", hash);
+
+		paymentUrl = sofortLib.getPaymentUrl(request, "53(UR3");
+		assertEquals("https://s0f0rt/payment/ideal/?user_id=1010&project_id=4808&amount=1.00&reason_1=%C3%A4%C3%84%C3%B6%C3%96%C3%BC%C3%9C%C3%9F+%C3%80%C3%A0%C3%82%C3%A2%C3%86%C3%A6&reason_2=%C3%87%C3%A7%C3%89%C3%A9%C3%88%C3%A8%C3%8A%C3%AA%C3%8B%C3%AB%C3%8F%C3%AF%C3%8E%C3%AE%C3%94%C3%B4%C5%92%C5%93%C3%99%C3%B9%C3%9B%C3%BB%C5%B8%C3%BF&user_variable_0=0th+user+variable&user_variable_1=1st+user+variable&user_variable_2=2nd+user+variable&user_variable_3=3rd+user+variable&user_variable_4=4th+user+variable&user_variable_5=5th+user+variable&sender_bank_code=0021&sender_account_number=123456789&sender_holder=Kaiser+van+der+Haalz&sender_country_id=NL&hash=" + hash + "&language_id=NL&interface_timeout=600&interface_version=TEST+iDeal+Interface", paymentUrl);
 	}
 
 
@@ -210,7 +218,7 @@ public class TestSofortLibIDeal {
 				.setRecepientBankBic("")
 				.setRecepientIban("")
 				.setRecepientCountryId("DE")
-				.setAmount(1.23)
+				.setAmount(1000.1)
 				.setCurrencyId("EUR")
 				.setReason1("äÄöÖüÜß ÀàÂâÆæ")
 				.setReason2("ÇçÉéÈèÊêËëÏïÎîÔôŒœÙùÛûŸÿ")
@@ -221,11 +229,11 @@ public class TestSofortLibIDeal {
 				.setUserVariable4("4th user variable")
 				.setUserVariable5("5th user variable")
 				.setCreated(dateTime)
-				.setHash("7ae2adddae37a19f4d7cd57a5b607020384ea713")
+				.setHash("")
 				.setStatus("pending")
 				.setStatusModified(dateTime);
 
 		String hash = sofortLib.calculateHash(response, "53(UR3");
-		assertEquals(response.getHash(), hash);
+		assertEquals("735e1126dc836a79717603972769f1abb093499f", hash);
 	}
 }
