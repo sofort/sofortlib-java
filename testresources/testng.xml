@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="SofortLibJava" parallel="classes">
+	<listeners>
+		<listener class-name="org.testng.reporters.XMLReporter" />
+	</listeners>
+	<test name="SofortLibJavaTests">
+		<packages>
+			<package name="com.sofort.*" />
+		</packages>
+	</test>
+</suite>
