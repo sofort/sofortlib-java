@@ -3,6 +3,9 @@
 June 2016:
 -----------
 
+* fixed the iDEAL hash calcualtion bug
+* new release 1.0.6
+
 * extended examples of usage
 * new release 1.0.5
 

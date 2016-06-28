@@ -3,6 +3,7 @@ package com.sofort.lib.ideal.products.ideal;
 import java.net.URL;
 
 import com.sofort.lib.core.internal.utils.HashAlgorithm;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.core.internal.utils.StringUtilities;
 import com.sofort.lib.ideal.products.request.IDealRequest;
 
@@ -54,7 +55,7 @@ public class IDealRequestPaymentUrlBuilder {
 
 		append("user_id", String.valueOf(request.getUserId()));
 		append("project_id", String.valueOf(request.getProjectId()));
-		append("amount", String.valueOf(request.getAmount()));
+		append("amount", new NumberUtilities().formatAmount(request.getAmount()));
 		append("reason_1", request.getReason1());
 		append("reason_2", request.getReason2());
 		append("user_variable_0", request.getUserVariable0());
