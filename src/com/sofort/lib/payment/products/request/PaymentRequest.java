@@ -75,7 +75,7 @@ public class PaymentRequest extends SofortLibRequest {
 	 * @param amount
 	 *            double value
 	 * @param currencyCode
-	 *            ISO 3166-1 alpha-2
+	 *            according to ISO 4217, i.e. EUR
 	 * @param reasons
 	 *            transfer reasons
 	 * @param consumerProtection
