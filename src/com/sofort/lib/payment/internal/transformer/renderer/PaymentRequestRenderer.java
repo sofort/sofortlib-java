@@ -5,6 +5,7 @@ import java.util.List;
 import com.sofort.lib.core.internal.transformer.renderer.XmlRequestRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.BankAccountRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.NotificationRenderer;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.core.internal.utils.xml.XmlElementRenderable;
 import com.sofort.lib.core.products.common.BankAccount;
 import com.sofort.lib.core.products.request.SofortLibRequest;
@@ -53,7 +54,7 @@ public class PaymentRequestRenderer implements XmlRequestRenderer {
 		element.append("phone_customer", request.getPhoneCustomer());
 		element.append("user_variables", "user_variable", request.getUserVariables());
 		append(element, "sender", request.getSender());
-		element.append("amount", request.getAmount());
+		element.append("amount", new NumberUtilities().formatAmount(request.getAmount()));
 		element.append("currency_code", request.getCurrencyCode());
 		element.append("reasons", "reason", request.getReasons());
 		element.append("success_url", request.getSuccessUrl());

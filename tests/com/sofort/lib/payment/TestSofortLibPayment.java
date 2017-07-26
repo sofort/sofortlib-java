@@ -51,7 +51,7 @@ public class TestSofortLibPayment {
 	public void testSofortPayment() {
 
 		/* build the request */
-		PaymentRequest request = new PaymentRequest(1234, 2.20, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), true)
+		PaymentRequest request = new PaymentRequest(1234, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), true)
 				.setInterfaceVersion("pn_test_1")
 				.setLanguageCode("DE")
 				.setTimeout(0)
@@ -122,7 +122,7 @@ public class TestSofortLibPayment {
 
 		assertEquals("su", t.getPaymentMethod());
 		assertEquals("de", t.getLanguageCode());
-		assertEquals(2.20, t.getAmount(), 0.001);
+		assertEquals(1.67, t.getAmount(), 0.001);
 		assertEquals(0.00, t.getAmountRefunded(), 0.001);
 		assertEquals("EUR", t.getCurrencyCode());
 

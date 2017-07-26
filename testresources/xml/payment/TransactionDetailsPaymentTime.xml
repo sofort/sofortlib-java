@@ -10,7 +10,7 @@
     <status_modified>2013-02-22T13:55:32+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -65,7 +65,7 @@
     <status_modified>2013-02-22T14:09:10+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -120,7 +120,7 @@
     <status_modified>2013-02-22T14:26:52+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -175,7 +175,7 @@
     <status_modified>2013-02-22T15:14:32+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -230,7 +230,7 @@
     <status_modified>2013-02-22T15:17:26+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -285,7 +285,7 @@
     <status_modified>2013-02-22T15:26:53+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -340,7 +340,7 @@
     <status_modified>2013-02-22T15:31:21+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -395,7 +395,7 @@
     <status_modified>2013-02-22T15:32:41+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -450,7 +450,7 @@
     <status_modified>2013-02-22T15:33:30+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -505,7 +505,7 @@
     <status_modified>2013-03-04T13:41:15+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -565,7 +565,7 @@
     <status_modified>2013-02-22T15:37:57+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -620,7 +620,7 @@
     <status_modified>2013-02-22T15:39:18+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -675,7 +675,7 @@
     <status_modified>2013-02-22T15:40:09+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -730,7 +730,7 @@
     <status_modified>2013-02-22T15:42:06+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -785,7 +785,7 @@
     <status_modified>2013-02-22T16:16:01+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -840,7 +840,7 @@
     <status_modified>2013-02-22T16:17:06+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -895,7 +895,7 @@
     <status_modified>2013-02-22T16:18:51+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -950,7 +950,7 @@
     <status_modified>2013-02-22T16:26:06+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -1005,7 +1005,7 @@
     <status_modified>2013-02-22T17:42:46+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -1060,7 +1060,7 @@
     <status_modified>2013-02-25T10:43:15+01:00</status_modified>
     <payment_method>su</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
