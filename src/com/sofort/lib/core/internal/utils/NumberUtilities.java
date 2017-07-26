@@ -1,5 +1,6 @@
 package com.sofort.lib.core.internal.utils;
 
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.ParseException;
@@ -16,6 +17,7 @@ public class NumberUtilities {
 
 	public NumberUtilities() {
 		amountFormat = new DecimalFormat("###0.00", new DecimalFormatSymbols(Locale.US));
+		amountFormat.setRoundingMode(RoundingMode.HALF_UP);
 	}
 
 

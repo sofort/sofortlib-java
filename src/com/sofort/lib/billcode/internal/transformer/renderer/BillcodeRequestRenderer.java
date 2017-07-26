@@ -6,6 +6,7 @@ import com.sofort.lib.billcode.products.request.BillcodeRequest;
 import com.sofort.lib.core.internal.transformer.renderer.XmlRequestRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.BankRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.NotificationRenderer;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.core.internal.utils.xml.XmlElementRenderable;
 import com.sofort.lib.core.products.common.Bank;
 import com.sofort.lib.core.products.common.BankAccount;
@@ -51,7 +52,7 @@ public class BillcodeRequestRenderer implements XmlRequestRenderer {
 		element.append("language_code", request.getLanguageCode());
 		element.append("start_date", request.getStartDate(), "yyyy-MM-dd HH:mm:ss");
 		element.append("end_date", request.getEndDate(), "yyyy-MM-dd HH:mm:ss");
-		element.append("amount", request.getAmount());
+		element.append("amount", new NumberUtilities().formatAmount(request.getAmount()));
 		element.append("currency_code", request.getCurrencyCode());
 		append(element, "sender", request.getSender());
 		element.append("reasons", "reason", request.getReasons());
@@ -82,7 +83,7 @@ public class BillcodeRequestRenderer implements XmlRequestRenderer {
 	/**
 	 * Append the {@link Notification} list wrapped into one parent element with
 	 * the given name to the renderable element.
-	 * 
+	 *
 	 * @param element
 	 *            the renderable element
 	 * @param parentName

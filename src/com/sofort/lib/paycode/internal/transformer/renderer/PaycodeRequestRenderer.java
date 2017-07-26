@@ -5,6 +5,7 @@ import java.util.List;
 import com.sofort.lib.core.internal.transformer.renderer.XmlRequestRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.BankRenderer;
 import com.sofort.lib.core.internal.transformer.renderer.parts.NotificationRenderer;
+import com.sofort.lib.core.internal.utils.NumberUtilities;
 import com.sofort.lib.core.internal.utils.xml.XmlElementRenderable;
 import com.sofort.lib.core.products.common.Bank;
 import com.sofort.lib.core.products.common.BankAccount;
@@ -51,7 +52,7 @@ public class PaycodeRequestRenderer implements XmlRequestRenderer {
 		element.append("language_code", request.getLanguageCode());
 		element.append("start_date", request.getStartDate(), "yyyy-MM-dd HH:mm:ss");
 		element.append("end_date", request.getEndDate(), "yyyy-MM-dd HH:mm:ss");
-		element.append("amount", request.getAmount());
+		element.append("amount", new NumberUtilities().formatAmount(request.getAmount()));
 		element.append("currency_code", request.getCurrencyCode());
 		append(element, "sender", request.getSender());
 		element.append("reasons", "reason", request.getReasons());
