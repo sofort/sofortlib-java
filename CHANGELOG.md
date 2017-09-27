@@ -1,5 +1,11 @@
 #### SofortLibJava @ 2014-2016 SOFORT GmbH
 
+July 2017:
+-----------
+
+* proper formatting and rounding of request amouns
+* new release 1.0.7
+
 June 2016:
 -----------
 

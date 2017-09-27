@@ -10,7 +10,7 @@
     <status_modified>2013-08-29T13:24:58+02:00</status_modified>
     <payment_method>billcode</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>
@@ -68,7 +68,7 @@
     <status_modified>2013-08-29T17:04:21+02:00</status_modified>
     <payment_method>billcode</payment_method>
     <language_code>de</language_code>
-    <amount>2.20</amount>
+    <amount>1.67</amount>
     <amount_refunded>0.00</amount_refunded>
     <currency_code>EUR</currency_code>
     <reasons>

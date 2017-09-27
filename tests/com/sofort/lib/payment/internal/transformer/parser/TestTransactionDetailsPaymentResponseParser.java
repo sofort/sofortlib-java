@@ -178,7 +178,7 @@ public class TestTransactionDetailsPaymentResponseParser {
 
 		assertEquals("su", t0.getPaymentMethod());
 		assertEquals("de", t0.getLanguageCode());
-		assertEquals(2.20, t0.getAmount(), 0.001);
+		assertEquals(1.67, t0.getAmount(), 0.001);
 		assertEquals(0.00, t0.getAmountRefunded(), 0.001);
 		assertEquals("EUR", t0.getCurrencyCode());
 

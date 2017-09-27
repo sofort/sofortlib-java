@@ -4,7 +4,7 @@
   <paycode>1234567890</paycode>
   <project_id>1234</project_id>
   <transaction>00002-20000-A1B2C3D4-E5F6</transaction>
-  <amount>2.20</amount>
+  <amount>1.67</amount>
   <reasons>
     <reason>Sofort Paycode Test</reason>
     <reason>Test Paycode Sofort</reason>

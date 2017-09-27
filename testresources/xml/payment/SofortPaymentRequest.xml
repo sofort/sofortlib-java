@@ -18,7 +18,7 @@
     <iban>DE4912345678901234567890</iban>
     <bic>BIC1BIC2</bic>
   </sender>
-  <amount>2.2</amount>
+  <amount>1.67</amount>
   <currency_code>EUR</currency_code>
   <reasons>
     <reason>a b c d e f g h</reason>

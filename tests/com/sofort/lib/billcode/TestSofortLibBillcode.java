@@ -79,7 +79,7 @@ public class TestSofortLibBillcode {
 	public void testSofortBillcode() throws ParseException, XmlRendererHelperException {
 
 		/* build the request */
-		BillcodeRequest request = new BillcodeRequest(1234, 2.20, Arrays.asList("a b c d e f g h", "z z z z z z z"))
+		BillcodeRequest request = new BillcodeRequest(1234, 1.66666666, Arrays.asList("a b c d e f g h", "z z z z z z z"))
 				.setInterfaceVersion("billcode_test_1")
 				.setLanguageCode("DE")
 				.setStartDate(getDateFormat().parse("2013-08-22 01:02:03"))
@@ -162,7 +162,7 @@ public class TestSofortLibBillcode {
 
 		assertEquals("billcode", t.getPaymentMethod());
 		assertEquals("de", t.getLanguageCode());
-		assertEquals(2.20, t.getAmount(), 0.001);
+		assertEquals(1.67, t.getAmount(), 0.001);
 		assertEquals(0.00, t.getAmountRefunded(), 0.001);
 		assertEquals("EUR", t.getCurrencyCode());
 
@@ -301,7 +301,7 @@ public class TestSofortLibBillcode {
 		assertEquals("1234567890", response.getBillcode());
 		assertEquals(1234, response.getProjectId());
 		assertEquals("00002-20000-A1B2C3D4-E5F6", response.getTransId());
-		assertEquals(2.20, response.getAmount(), 0.001);
+		assertEquals(1.67, response.getAmount(), 0.001);
 		assertNotNull(response.getReasons());
 		assertEquals(2, response.getReasons().size());
 		assertEquals("Sofort billcode Test", response.getReasons().get(0));
