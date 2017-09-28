@@ -1,4 +1,4 @@
-# SofortLibJava @ 2014-2016 SOFORT GmbH
+# SofortLibJava @ 2014-2017 SOFORT GmbH
 
 ## English Version
 
