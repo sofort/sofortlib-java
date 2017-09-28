@@ -1,4 +1,11 @@
-#### SofortLibJava @ 2014-2016 SOFORT GmbH
+#### SofortLibJava @ 2014-2017 SOFORT GmbH
+
+September 2017:
+-----------
+
+* fixed testing package wildcard
+* extended user-agent header
+* new release 1.0.8
 
 July 2017:
 -----------

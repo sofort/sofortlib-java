@@ -6,7 +6,7 @@
 	</listeners>
 	<test name="SofortLibJavaTests">
 		<packages>
-			<package name="com.sofort.*" />
+			<package name="com.sofort.lib.*" />
 		</packages>
 	</test>
 </suite>
