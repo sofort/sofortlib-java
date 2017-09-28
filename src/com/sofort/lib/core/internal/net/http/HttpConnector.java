@@ -36,7 +36,7 @@ import com.sofort.lib.core.internal.transformer.RawResponse.Status;
  */
 public class HttpConnector implements Connector {
 
-	public static final String VERSION = "v1.0.3";
+	public static final String VERSION = "v1.0.4";
 
 
 	@Override
@@ -181,7 +181,7 @@ public class HttpConnector implements Connector {
 		connection.setRequestProperty("Accept", "application/xml; charset=UTF-8");
 
 		/* initialize additional settings */
-		connection.setRequestProperty("User-Agent", "Sofort Lib Java " + getClass().getSimpleName() + " " + VERSION);
+		connection.setRequestProperty("User-Agent", "Sofort Lib Java " + getClass().getSimpleName() + " " + VERSION + " (SofortLib v@sofortlib-version@)");
 		connection.setRequestProperty("Accept-Encoding", "gzip, deflate");
 
 	}

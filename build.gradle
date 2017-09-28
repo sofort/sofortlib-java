@@ -8,6 +8,8 @@ targetCompatibility = 1.8
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
+import org.apache.tools.ant.filters.ReplaceTokens
+
 sourceSets {
 	main { 
 		java { srcDirs 'src' }
@@ -27,7 +29,7 @@ repositories {
 }
 
 group = 'com.sofort'
-version = '1.0.7'
+version = '1.0.8'
 archivesBaseName = "sofortlib-java"
 
 dependencies {
@@ -68,6 +70,23 @@ task javadocJar(type: Jar, dependsOn:javadoc) {
 task buildAll {
 }
 
+task prepareSources(type: Copy) {
+    from('src/')
+    into('build/src')
+    filter(ReplaceTokens, tokens: ['sofortlib-version': version])
+}
+
+
+sourceSets {
+  main {
+    java { srcDirs = ['build/src']}
+  }
+}
+
+compileJava {
+    dependsOn prepareSources
+}
+
 buildAll.dependsOn jar
 buildAll.dependsOn testsJar
 buildAll.dependsOn sourcesJar
@@ -86,6 +105,9 @@ signing {
   sign configurations.archives
 }
 
+
+
+// upload archives to ossrh (a pre-process of publishing on mavencentral)
 uploadArchives {
   repositories {
     mavenDeployer {
