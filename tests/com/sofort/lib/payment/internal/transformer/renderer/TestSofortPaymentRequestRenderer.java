@@ -13,6 +13,7 @@ import com.sofort.lib.core.internal.utils.xml.XmlRendererHelperException;
 import com.sofort.lib.core.products.common.BankAccount;
 import com.sofort.lib.core.products.request.parts.Notification;
 import com.sofort.lib.payment.products.request.PaymentRequest;
+import com.sofort.lib.payment.products.request.SofortPayment;
 
 
 public class TestSofortPaymentRequestRenderer {
@@ -21,7 +22,7 @@ public class TestSofortPaymentRequestRenderer {
 	@Test
 	public void testRenderer() throws XmlRendererHelperException {
 
-		PaymentRequest spr = new PaymentRequest(1383, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), true)
+		PaymentRequest spr = new PaymentRequest(1383, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), new SofortPayment())
 				.setInterfaceVersion("pn_test_1")
 				.setLanguageCode("DE")
 				.setTimeout(0)

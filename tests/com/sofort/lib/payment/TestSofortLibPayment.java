@@ -23,6 +23,7 @@ import com.sofort.lib.payment.internal.net.http.HttpConnectionConfigPayment;
 import com.sofort.lib.payment.internal.transformer.xml.XmlConfigPayment;
 import com.sofort.lib.payment.products.request.PaymentRequest;
 import com.sofort.lib.payment.products.request.PaymentTransactionDetailsRequest;
+import com.sofort.lib.payment.products.request.SofortPayment;
 import com.sofort.lib.payment.products.response.PaymentResponse;
 import com.sofort.lib.payment.products.response.PaymentTransactionDetailsResponse;
 import com.sofort.lib.payment.products.response.parts.PaymentStatus;
@@ -51,7 +52,7 @@ public class TestSofortLibPayment {
 	public void testSofortPayment() {
 
 		/* build the request */
-		PaymentRequest request = new PaymentRequest(1234, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), true)
+		PaymentRequest request = new PaymentRequest(1234, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), new SofortPayment())
 				.setInterfaceVersion("pn_test_1")
 				.setLanguageCode("DE")
 				.setTimeout(0)

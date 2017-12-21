@@ -63,8 +63,8 @@ public class PaymentRequest extends SofortLibRequest {
 	/** The notification emails. */
 	private List<Notification> notificationEmails;
 
-	/** The consumer protection. */
-	private final boolean consumerProtection;
+	/** The sofort payment special conatiner. */
+	private final SofortPayment sofortPayment;
 
 
 	/**
@@ -81,12 +81,12 @@ public class PaymentRequest extends SofortLibRequest {
 	 * @param consumerProtection
 	 *            the consumer protection
 	 */
-	public PaymentRequest(Integer projectId, Double amount, String currencyCode, List<String> reasons, boolean consumerProtection) {
+	public PaymentRequest(Integer projectId, Double amount, String currencyCode, List<String> reasons, SofortPayment sofortPayment) {
 		this.projectId = projectId;
 		this.amount = amount;
 		this.currencyCode = currencyCode;
 		this.reasons = reasons;
-		this.consumerProtection = consumerProtection;
+		this.sofortPayment = sofortPayment;
 	}
 
 
@@ -431,12 +431,12 @@ public class PaymentRequest extends SofortLibRequest {
 
 
 	/**
-	 * Checks if is consumer protection.
+	 * Gets the sofort payment special container.
 	 * 
-	 * @return true, if is consumer protection
+	 * @return the sofort payment special container
 	 */
-	public boolean isConsumerProtection() {
-		return consumerProtection;
+	public SofortPayment getSofortPayment() {
+		return sofortPayment;
 	}
 
 }

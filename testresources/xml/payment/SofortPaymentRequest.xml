@@ -35,7 +35,5 @@
     <notification_email notify_on="pending,refunded">api@domain.de</notification_email>
     <notification_email>api@domain.net</notification_email>
   </notification_emails>
-  <su>
-    <customer_protection>1</customer_protection>
-  </su>
+  <su/>
 </multipay>
