@@ -32,5 +32,7 @@
     <notification_email>d@e.f</notification_email>
     <notification_email>g@h.j</notification_email>
   </notification_emails>
-  <su/>
+  <su>
+    <customer_protection>1</customer_protection>
+  </su>
 </multipay>

@@ -22,7 +22,7 @@ public class TestSofortPaymentRequestRenderer {
 	@Test
 	public void testRenderer() throws XmlRendererHelperException {
 
-		PaymentRequest spr = new PaymentRequest(1383, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), new SofortPayment())
+		PaymentRequest spr = new PaymentRequest(1383, 1.66666666, "EUR", Arrays.asList("a b c d e f g h", "z z z z z z z"), new SofortPayment().setConsumerProtection(true))
 				.setInterfaceVersion("pn_test_1")
 				.setLanguageCode("DE")
 				.setTimeout(0)
