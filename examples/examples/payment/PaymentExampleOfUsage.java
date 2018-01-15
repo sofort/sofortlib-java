@@ -16,6 +16,7 @@ import com.sofort.lib.core.products.response.SofortTransactionStatusNotification
 import com.sofort.lib.payment.DefaultSofortLibPayment;
 import com.sofort.lib.payment.products.request.PaymentRequest;
 import com.sofort.lib.payment.products.request.PaymentTransactionDetailsRequest;
+import com.sofort.lib.payment.products.request.SofortPayment;
 import com.sofort.lib.payment.products.response.PaymentResponse;
 import com.sofort.lib.payment.products.response.PaymentTransactionDetailsResponse;
 import com.sofort.lib.payment.products.response.parts.PaymentTransactionDetails;
@@ -52,12 +53,13 @@ public class PaymentExampleOfUsage {
 		/**
 		 * Start a sofort payment, check for errors and warnings and use the
 		 * received payment url for redirection of the customer.
+		 * @param sofortPayment sofort payment special container
 		 * 
 		 * @return the payment URL the customer have to be redirected to
 		 */
-		public String initialiseSofortPayment(double amount, String currency, boolean consumerProtection, String... purposes) {
+		public String initialiseSofortPayment(double amount, String currency, SofortPayment sofortPayment, String... purposes) {
 
-			PaymentRequest paymentRequest = new PaymentRequest(projectId, amount, currency, Arrays.asList(purposes), consumerProtection)
+			PaymentRequest paymentRequest = new PaymentRequest(projectId, amount, currency, Arrays.asList(purposes), sofortPayment)
 					.setNotificationUrls(Arrays.asList(new Notification(notificationURL)))
 					.setSuccessUrl(successURL)
 					.setAbortUrl(abortURL)

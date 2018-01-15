@@ -11,6 +11,7 @@ import com.sofort.lib.core.products.common.BankAccount;
 import com.sofort.lib.core.products.request.SofortLibRequest;
 import com.sofort.lib.core.products.request.parts.Notification;
 import com.sofort.lib.payment.products.request.PaymentRequest;
+import com.sofort.lib.payment.products.request.SofortPayment;
 
 
 /**
@@ -64,7 +65,15 @@ public class PaymentRequestRenderer implements XmlRequestRenderer {
 		append(element, "notification_urls", "notification_url", request.getNotificationUrls());
 		append(element, "notification_emails", "notification_email", request.getNotificationEmails());
 
-		element.append("su").append("customer_protection", request.isConsumerProtection());
+		renderSofortPayment(request.getSofortPayment(), element);
+	}
+
+
+	private void renderSofortPayment(SofortPayment sofortPayment, XmlElementRenderable element) {
+		XmlElementRenderable su = element.append("su");
+		if (sofortPayment.isConsumerProtection() != null) {
+			su.append("customer_protection", sofortPayment.isConsumerProtection());
+		}
 	}
 
 
