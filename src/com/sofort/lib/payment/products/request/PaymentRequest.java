@@ -63,13 +63,13 @@ public class PaymentRequest extends SofortLibRequest {
 	/** The notification emails. */
 	private List<Notification> notificationEmails;
 
-	/** The sofort payment special conatiner. */
+	/** The sofort payment special container. */
 	private final SofortPayment sofortPayment;
 
 
 	/**
 	 * Instantiates a new sofort payment request.
-	 * 
+	 *
 	 * @param projectId
 	 *            the project identification number
 	 * @param amount
@@ -78,8 +78,8 @@ public class PaymentRequest extends SofortLibRequest {
 	 *            according to ISO 4217, i.e. EUR
 	 * @param reasons
 	 *            transfer reasons
-	 * @param consumerProtection
-	 *            the consumer protection
+	 * @param sofortPayment
+	 *            sofort payment parameter class
 	 */
 	public PaymentRequest(Integer projectId, Double amount, String currencyCode, List<String> reasons, SofortPayment sofortPayment) {
 		this.projectId = projectId;
@@ -92,7 +92,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the interface version.
-	 * 
+	 *
 	 * @return the interface version
 	 */
 	public String getInterfaceVersion() {
@@ -102,7 +102,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the interface version.
-	 * 
+	 *
 	 * @param interfaceVersion
 	 *            the interface version
 	 * @return the sofort payment request
@@ -115,7 +115,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the language code.
-	 * 
+	 *
 	 * @return the language code
 	 */
 	public String getLanguageCode() {
@@ -125,7 +125,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the language code.
-	 * 
+	 *
 	 * @param languageCode
 	 *            the language code
 	 * @return the sofort payment request
@@ -138,7 +138,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the timeout.
-	 * 
+	 *
 	 * @return the timeout
 	 */
 	public Long getTimeout() {
@@ -149,7 +149,7 @@ public class PaymentRequest extends SofortLibRequest {
 	/**
 	 * Sets the timeout in seconds. Default/Not set - a request without
 	 * expiration.
-	 * 
+	 *
 	 * @param timeout
 	 *            the timeout in seconds
 	 * @return the sofort payment request
@@ -162,7 +162,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the email customer.
-	 * 
+	 *
 	 * @return the email customer
 	 */
 	public String getEmailCustomer() {
@@ -172,7 +172,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the email customer.
-	 * 
+	 *
 	 * @param emailCustomer
 	 *            the email customer
 	 * @return the sofort payment request
@@ -185,7 +185,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the phone customer.
-	 * 
+	 *
 	 * @return the phone customer
 	 */
 	public String getPhoneCustomer() {
@@ -195,7 +195,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the phone customer.
-	 * 
+	 *
 	 * @param phoneCustomer
 	 *            the phone customer
 	 * @return the sofort payment request
@@ -208,7 +208,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the user variables.
-	 * 
+	 *
 	 * @return the user variables
 	 */
 	public List<String> getUserVariables() {
@@ -218,7 +218,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the user variables.
-	 * 
+	 *
 	 * @param userVariables
 	 *            the user variables
 	 * @return the sofort payment request
@@ -231,7 +231,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the sender.
-	 * 
+	 *
 	 * @return the sender
 	 */
 	public BankAccount getSender() {
@@ -241,7 +241,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the sender.
-	 * 
+	 *
 	 * @param sender
 	 *            the sender
 	 * @return the sofort payment request
@@ -254,7 +254,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the success url.
-	 * 
+	 *
 	 * @return the success url
 	 */
 	public String getSuccessUrl() {
@@ -264,7 +264,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the success url.
-	 * 
+	 *
 	 * @param successUrl
 	 *            the success url
 	 * @return the sofort payment request
@@ -277,7 +277,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the success link redirect.
-	 * 
+	 *
 	 * @return the success link redirect
 	 */
 	public Boolean getSuccessLinkRedirect() {
@@ -287,7 +287,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the success link redirect.
-	 * 
+	 *
 	 * @param successLinkRedirect
 	 *            the new success link redirect
 	 * @return the sofort payment request
@@ -300,7 +300,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the abort url.
-	 * 
+	 *
 	 * @return the abort url
 	 */
 	public String getAbortUrl() {
@@ -310,7 +310,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the abort url.
-	 * 
+	 *
 	 * @param abortUrl
 	 *            the abort url
 	 * @return the sofort payment request
@@ -323,7 +323,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the timeout url.
-	 * 
+	 *
 	 * @return the timeout url
 	 */
 	public String getTimeoutUrl() {
@@ -333,7 +333,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the timeout url.
-	 * 
+	 *
 	 * @param timeoutUrl
 	 *            the timeout url
 	 * @return the sofort payment request
@@ -346,7 +346,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the notification urls.
-	 * 
+	 *
 	 * @return the notification urls
 	 */
 	public List<Notification> getNotificationUrls() {
@@ -356,7 +356,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the notification urls.
-	 * 
+	 *
 	 * @param notificationUrls
 	 *            the notification urls
 	 * @return the sofort payment request
@@ -369,7 +369,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the notification emails.
-	 * 
+	 *
 	 * @return the notification emails
 	 */
 	public List<Notification> getNotificationEmails() {
@@ -379,7 +379,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Sets the notification emails.
-	 * 
+	 *
 	 * @param notificationEmails
 	 *            the notification emails
 	 * @return the sofort payment request
@@ -392,7 +392,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the reasons.
-	 * 
+	 *
 	 * @return the reasons
 	 */
 	public List<String> getReasons() {
@@ -402,7 +402,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the project id.
-	 * 
+	 *
 	 * @return the project id
 	 */
 	public Integer getProjectId() {
@@ -412,7 +412,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the amount.
-	 * 
+	 *
 	 * @return the amount
 	 */
 	public Double getAmount() {
@@ -422,7 +422,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the currency code.
-	 * 
+	 *
 	 * @return the currency code
 	 */
 	public String getCurrencyCode() {
@@ -432,7 +432,7 @@ public class PaymentRequest extends SofortLibRequest {
 
 	/**
 	 * Gets the sofort payment special container.
-	 * 
+	 *
 	 * @return the sofort payment special container
 	 */
 	public SofortPayment getSofortPayment() {

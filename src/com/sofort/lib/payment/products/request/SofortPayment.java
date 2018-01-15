@@ -1,7 +1,7 @@
 package com.sofort.lib.payment.products.request;
 
 /**
- * The class represents the sofort payment special container (API -> 'su')
+ * The class represents the sofort payment special container (API -&gt; 'su')
  */
 public class SofortPayment {
 
