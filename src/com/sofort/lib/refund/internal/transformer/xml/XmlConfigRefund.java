@@ -15,39 +15,39 @@ import com.sofort.lib.refund.products.response.RefundResponse;
  */
 public class XmlConfigRefund extends XmlConfig {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
-	 */
-	@Override
-	protected void initRootEntryMapping() {
-		rootEntryMapping.put(RefundRequest.class, new XmlRootEntry("refunds", new Attribute("version", "3.0")));
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
+     */
+    @Override
+    protected void initRootEntryMapping() {
+        rootEntryMapping.put(RefundRequest.class, new XmlRootEntry("refunds", new Attribute("version", "3.0")));
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
-	 */
-	@Override
-	protected void initRendererMapping() {
-		rendererMapping.put(RefundRequest.class, new RefundRequestRenderer());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
+     */
+    @Override
+    protected void initRendererMapping() {
+        rendererMapping.put(RefundRequest.class, new RefundRequestRenderer());
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
-	 */
-	@Override
-	protected void initParserMapping() {
-		parserMapping.put(RefundResponse.class, new RefundResponseParser());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
+     */
+    @Override
+    protected void initParserMapping() {
+        parserMapping.put(RefundResponse.class, new RefundResponseParser());
+    }
 
 }

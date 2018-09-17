@@ -13,34 +13,32 @@ import com.sofort.lib.payment.products.request.PaymentTransactionDetailsRequest;
  */
 public class HttpConnectionConfigPayment extends HttpConnectionConfig {
 
-	/**
-	 * An instance with connector and basic authorization.
-	 * 
-	 * @param connector
-	 *            low level API communicator
-	 * @param authorization
-	 *            basic HTTP authorization
-	 */
-	public HttpConnectionConfigPayment(HttpConnector connector, BasicHttpAuthorization authorization) {
-		super(connector, authorization);
-	}
+    /**
+     * An instance with connector and basic authorization.
+     *
+     * @param connector     low level API communicator
+     * @param authorization basic HTTP authorization
+     */
+    public HttpConnectionConfigPayment(HttpConnector connector, BasicHttpAuthorization authorization) {
+        super(connector, authorization);
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.net.http.HttpConnectionConfig#initRequestConnections
-	 * ()
-	 */
-	@Override
-	protected void initRequestConnections() {
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.net.http.HttpConnectionConfig#initRequestConnections
+     * ()
+     */
+    @Override
+    protected void initRequestConnections() {
 
-		String url = "https://api.sofort.com/api/xml";
+        String url = "https://api.sofort.com/api/xml";
 
-		addConnection(PaymentRequest.class, url);
-		addConnection(PaymentTransactionDetailsRequest.class, url);
+        addConnection(PaymentRequest.class, url);
+        addConnection(PaymentTransactionDetailsRequest.class, url);
 
-	}
+    }
 
 }

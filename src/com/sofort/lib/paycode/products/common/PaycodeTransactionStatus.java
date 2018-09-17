@@ -5,31 +5,30 @@ package com.sofort.lib.paycode.products.common;
  */
 public enum PaycodeTransactionStatus {
 
-	LOSS,
-	PENDING,
-	RECEIVED,
-	REFUNDED,
-	UNTRACEABLE;
+    LOSS,
+    PENDING,
+    RECEIVED,
+    REFUNDED,
+    UNTRACEABLE;
 
-	/**
-	 * Gets the paycode transaction status for given name.
-	 * 
-	 * @param name
-	 *            the name
-	 * @return the payment status
-	 */
-	public static PaycodeTransactionStatus get(String name) {
+    /**
+     * Gets the paycode transaction status for given name.
+     *
+     * @param name the name
+     * @return the payment status
+     */
+    public static PaycodeTransactionStatus get(String name) {
 
-		if (name == null) {
-			return null;
-		}
+        if (name == null) {
+            return null;
+        }
 
-		for (PaycodeTransactionStatus status : values()) {
-			if (status.name().equalsIgnoreCase(name)) {
-				return status;
-			}
-		}
+        for (PaycodeTransactionStatus status : values()) {
+            if (status.name().equalsIgnoreCase(name)) {
+                return status;
+            }
+        }
 
-		throw new IllegalArgumentException("Unknown paycode transaction status: " + name);
-	}
+        throw new IllegalArgumentException("Unknown paycode transaction status: " + name);
+    }
 }

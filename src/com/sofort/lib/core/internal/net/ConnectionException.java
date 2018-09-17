@@ -5,24 +5,22 @@ package com.sofort.lib.core.internal.net;
  */
 public class ConnectionException extends RuntimeException {
 
-	private static final long serialVersionUID = -487912512040109424L;
+    private static final long serialVersionUID = -487912512040109424L;
 
 
-	/**
-	 * @param message
-	 *            exception message
-	 */
-	public ConnectionException(String message) {
-		super(message);
-	}
+    /**
+     * @param message exception message
+     */
+    public ConnectionException(String message) {
+        super(message);
+    }
 
 
-	/**
-	 * @param cause
-	 *            exception cause
-	 */
-	public ConnectionException(Throwable cause) {
-		super(cause);
-	}
+    /**
+     * @param cause exception cause
+     */
+    public ConnectionException(Throwable cause) {
+        super(cause);
+    }
 
 }

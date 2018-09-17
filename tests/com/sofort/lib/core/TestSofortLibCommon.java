@@ -5,9 +5,6 @@ import static org.testng.AssertJUnit.assertNotNull;
 
 import java.text.SimpleDateFormat;
 
-import org.apache.commons.logging.LogFactory;
-import org.testng.annotations.Test;
-
 import com.sofort.lib.core.internal.ResourceContentReader;
 import com.sofort.lib.core.internal.transformer.DataHandler;
 import com.sofort.lib.core.internal.transformer.RawResponse;
@@ -15,6 +12,7 @@ import com.sofort.lib.core.internal.transformer.xml.XmlConfig;
 import com.sofort.lib.core.internal.transformer.xml.XmlDataHandler;
 import com.sofort.lib.core.internal.utils.xml.XmlFormatter;
 import com.sofort.lib.core.products.response.SofortTransactionStatusNotification;
+import org.testng.annotations.Test;
 
 
 public class TestSofortLibCommon {
@@ -44,7 +42,7 @@ public class TestSofortLibCommon {
 			}
 		});
 
-		SofortLibCommon sofortLib = new SofortLibCommon(null, dataHandler, LogFactory.getLog(getClass()));
+		SofortLibCommon sofortLib = new SofortLibCommon(null, dataHandler);
 		SofortTransactionStatusNotification response = sofortLib.parseStatusNotificationResponse(new RawResponse(RawResponse.Status.OK, content));
 
 		/* test the received notification response */

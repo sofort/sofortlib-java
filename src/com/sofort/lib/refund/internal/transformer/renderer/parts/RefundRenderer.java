@@ -10,20 +10,20 @@ import com.sofort.lib.refund.products.request.parts.Refund;
  */
 public class RefundRenderer extends XmlElementRenderer<Refund> {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementRenderer#render(java.lang
-	 * .Object, com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementRenderable)
-	 */
-	@Override
-	public void render(Refund refund, XmlElementRenderable element) {
-		element.append("transaction", refund.getTransId());
-		element.append("amount", refund.getAmount());
-		element.append("comment", refund.getComment());
-		element.append("reason_1", refund.getReason1());
-		element.append("reason_2", refund.getReason2());
-		element.append("partial_refund_id", refund.getPartialRefundId());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementRenderer#render(java.lang
+     * .Object, com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementRenderable)
+     */
+    @Override
+    public void render(Refund refund, XmlElementRenderable element) {
+        element.append("transaction", refund.getTransId());
+        element.append("amount", refund.getAmount());
+        element.append("comment", refund.getComment());
+        element.append("reason_1", refund.getReason1());
+        element.append("reason_2", refund.getReason2());
+        element.append("partial_refund_id", refund.getPartialRefundId());
+    }
 }

@@ -5,18 +5,19 @@ package com.sofort.lib.core.internal.utils.xml;
  */
 public class XmlVerifierException extends Exception {
 
-	/** The Constant serialVersionUID. */
-	private static final long serialVersionUID = -5899425937459201618L;
+    /**
+     * The Constant serialVersionUID.
+     */
+    private static final long serialVersionUID = -5899425937459201618L;
 
 
-	/**
-	 * Instantiates a new xml verifier exception.
-	 * 
-	 * @param message
-	 *            the message
-	 */
-	public XmlVerifierException(String message) {
-		super(message);
-	}
+    /**
+     * Instantiates a new xml verifier exception.
+     *
+     * @param message the message
+     */
+    public XmlVerifierException(String message) {
+        super(message);
+    }
 
 }

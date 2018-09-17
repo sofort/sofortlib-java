@@ -3,9 +3,6 @@ package com.sofort.lib.core;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
 import com.sofort.lib.core.internal.ResourceContentReader;
 import com.sofort.lib.core.internal.net.ConnectionData;
 import com.sofort.lib.core.internal.net.Connector;
@@ -15,17 +12,14 @@ import com.sofort.lib.core.internal.transformer.RawResponse.Status;
 import com.sofort.lib.core.internal.utils.HashBuilder;
 import com.sofort.lib.core.internal.utils.XmlNormalizer;
 
-
+import static com.sofort.lib.core.Logger.log;
 /**
  * A file implementation of SofortLib connector. Used to test the SofortLib with
  * stored SofortLib responses into files.
  */
 public class ResourceConnector implements Connector {
 
-	private final Log log = LogFactory.getLog(getClass());
-
 	private final Map<String, String> requestHashResponseMap;
-
 
 	public ResourceConnector(String[] requestResources) {
 

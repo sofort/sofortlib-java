@@ -9,16 +9,16 @@ import com.sofort.lib.core.internal.utils.xml.XmlElementParser;
  */
 public class StringParser extends XmlElementParser<String> {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementParser#parseChildImpl(com
-	 * .sofort.lib.internal.utils.xml.XmlElementParsable)
-	 */
-	@Override
-	protected String parseChildImpl(XmlElementParsable element) {
-		return element.getText();
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementParser#parseChildImpl(com
+     * .sofort.lib.internal.utils.xml.XmlElementParsable)
+     */
+    @Override
+    protected String parseChildImpl(XmlElementParsable element) {
+        return element.getText();
+    }
 
 }

@@ -13,39 +13,39 @@ import com.sofort.lib.ideal.products.response.IDealBanksResponse;
  */
 public class XmlConfigIDeal extends XmlConfig {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
-	 */
-	@Override
-	protected void initRootEntryMapping() {
-		rootEntryMapping.put(IDealBanksRequest.class, new XmlRootEntry(null));
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
+     */
+    @Override
+    protected void initRootEntryMapping() {
+        rootEntryMapping.put(IDealBanksRequest.class, new XmlRootEntry(null));
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
-	 */
-	@Override
-	protected void initRendererMapping() {
-		rendererMapping.put(IDealBanksRequest.class, new IDealBanksRequestRenderer());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
+     */
+    @Override
+    protected void initRendererMapping() {
+        rendererMapping.put(IDealBanksRequest.class, new IDealBanksRequestRenderer());
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
-	 */
-	@Override
-	protected void initParserMapping() {
-		parserMapping.put(IDealBanksResponse.class, new IDealBanksResponseParser());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
+     */
+    @Override
+    protected void initParserMapping() {
+        parserMapping.put(IDealBanksResponse.class, new IDealBanksResponseParser());
+    }
 
 }
