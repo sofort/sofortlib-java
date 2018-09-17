@@ -5,66 +5,69 @@ package com.sofort.lib.core.products.response.parts;
  */
 public class FailureMessage {
 
-	/** The code. */
-	private final String code;
+    /**
+     * The code.
+     */
+    private final String code;
 
-	/** The message. */
-	private final String message;
+    /**
+     * The message.
+     */
+    private final String message;
 
-	/** The field. */
-	private final String field;
-
-
-	/**
-	 * Defines a {@link FailureMessage} object with a code, message and field.
-	 * 
-	 * @param code
-	 *            the failure code
-	 * @param message
-	 *            the failure message
-	 * @param field
-	 *            the field name
-	 */
-	public FailureMessage(String code, String message, String field) {
-		this.code = code;
-		this.message = message;
-		this.field = field;
-	}
+    /**
+     * The field.
+     */
+    private final String field;
 
 
-	/**
-	 * Returns the failure code.
-	 * 
-	 * @return the failure code
-	 */
-	public String getCode() {
-		return code;
-	}
+    /**
+     * Defines a {@link FailureMessage} object with a code, message and field.
+     *
+     * @param code    the failure code
+     * @param message the failure message
+     * @param field   the field name
+     */
+    public FailureMessage(String code, String message, String field) {
+        this.code = code;
+        this.message = message;
+        this.field = field;
+    }
 
 
-	/**
-	 * Returns the failure message.
-	 * 
-	 * @return the failure message
-	 */
-	public String getMessage() {
-		return message;
-	}
+    /**
+     * Returns the failure code.
+     *
+     * @return the failure code
+     */
+    public String getCode() {
+        return code;
+    }
 
 
-	/**
-	 * Return the field name failure happened in.
-	 * 
-	 * @return the field name failure happened in
-	 */
-	public String getField() {
-		return field;
-	}
+    /**
+     * Returns the failure message.
+     *
+     * @return the failure message
+     */
+    public String getMessage() {
+        return message;
+    }
 
 
-	@Override
-	public String toString() {
-		return "code:" + code + " / message:" + message + " / field: " + field;
-	}
+    /**
+     * Return the field name failure happened in.
+     *
+     * @return the field name failure happened in
+     */
+    public String getField() {
+        return field;
+    }
+
+
+    @Override
+    public String toString() {
+        return "code:" + code + " / message:" + message + " / field: " + field;
+    }
 
 }

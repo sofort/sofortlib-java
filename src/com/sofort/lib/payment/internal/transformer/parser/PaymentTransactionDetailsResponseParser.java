@@ -11,17 +11,17 @@ import com.sofort.lib.payment.products.response.PaymentTransactionDetailsRespons
  */
 public class PaymentTransactionDetailsResponseParser extends SofortLibResponseParser<PaymentTransactionDetailsResponse> {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.parser.XmlResponseParser#parse(com
-	 * .sofort.lib.internal.utils.xml.XmlElementParsable)
-	 */
-	@Override
-	public PaymentTransactionDetailsResponse parseResponse(XmlElementParsable element) {
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.parser.XmlResponseParser#parse(com
+     * .sofort.lib.internal.utils.xml.XmlElementParsable)
+     */
+    @Override
+    public PaymentTransactionDetailsResponse parseResponse(XmlElementParsable element) {
 
-		return new PaymentTransactionDetailsResponse(
-				new PaymentTransactionDetailsParser().parseChildren(element, "transaction_details"));
-	}
+        return new PaymentTransactionDetailsResponse(
+                new PaymentTransactionDetailsParser().parseChildren(element, "transaction_details"));
+    }
 }

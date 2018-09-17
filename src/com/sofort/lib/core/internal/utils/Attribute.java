@@ -5,44 +5,46 @@ package com.sofort.lib.core.internal.utils;
  */
 public class Attribute {
 
-	/** The key. */
-	private final String key;
+    /**
+     * The key.
+     */
+    private final String key;
 
-	/** The value. */
-	private final String value;
-
-
-	/**
-	 * Defines the key -&gt; value pair.
-	 * 
-	 * @param key
-	 *            key.
-	 * @param value
-	 *            value.
-	 */
-	public Attribute(String key, String value) {
-		this.key = key;
-		this.value = value;
-	}
+    /**
+     * The value.
+     */
+    private final String value;
 
 
-	/**
-	 * Gets the key.
-	 * 
-	 * @return defined key.
-	 */
-	public String getKey() {
-		return key;
-	}
+    /**
+     * Defines the key -&gt; value pair.
+     *
+     * @param key   key.
+     * @param value value.
+     */
+    public Attribute(String key, String value) {
+        this.key = key;
+        this.value = value;
+    }
 
 
-	/**
-	 * Gets the value.
-	 * 
-	 * @return defined value.
-	 */
-	public String getValue() {
-		return value;
-	}
+    /**
+     * Gets the key.
+     *
+     * @return defined key.
+     */
+    public String getKey() {
+        return key;
+    }
+
+
+    /**
+     * Gets the value.
+     *
+     * @return defined value.
+     */
+    public String getValue() {
+        return value;
+    }
 
 }

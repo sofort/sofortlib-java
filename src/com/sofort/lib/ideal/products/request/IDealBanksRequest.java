@@ -8,5 +8,5 @@ import com.sofort.lib.core.products.request.SofortLibRequest;
  * which have to be send to API.
  */
 public class IDealBanksRequest extends SofortLibRequest {
-	/* NoOp */
+    /* NoOp */
 }

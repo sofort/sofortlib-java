@@ -19,42 +19,42 @@ import com.sofort.lib.payment.products.response.PaymentTransactionDetailsRespons
  */
 public class XmlConfigPayment extends XmlConfig {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
-	 */
-	@Override
-	protected void initRootEntryMapping() {
-		rootEntryMapping.put(PaymentRequest.class, new XmlRootEntry("multipay", new Attribute("version", "1.0")));
-		rootEntryMapping.put(PaymentTransactionDetailsRequest.class, new XmlRootEntry("transaction_request", new Attribute("version", "2.0")));
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRootEntryMapping()
+     */
+    @Override
+    protected void initRootEntryMapping() {
+        rootEntryMapping.put(PaymentRequest.class, new XmlRootEntry("multipay", new Attribute("version", "1.0")));
+        rootEntryMapping.put(PaymentTransactionDetailsRequest.class, new XmlRootEntry("transaction_request", new Attribute("version", "2.0")));
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
-	 */
-	@Override
-	protected void initRendererMapping() {
-		rendererMapping.put(PaymentRequest.class, new PaymentRequestRenderer());
-		rendererMapping.put(PaymentTransactionDetailsRequest.class, new PaymentTransactionDetailsRequestRenderer());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initRendererMapping()
+     */
+    @Override
+    protected void initRendererMapping() {
+        rendererMapping.put(PaymentRequest.class, new PaymentRequestRenderer());
+        rendererMapping.put(PaymentTransactionDetailsRequest.class, new PaymentTransactionDetailsRequestRenderer());
+    }
 
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
-	 */
-	@Override
-	protected void initParserMapping() {
-		parserMapping.put(PaymentResponse.class, new PaymentResponseParser());
-		parserMapping.put(PaymentTransactionDetailsResponse.class, new PaymentTransactionDetailsResponseParser());
-	}
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.xml.XmlConfig#initParserMapping()
+     */
+    @Override
+    protected void initParserMapping() {
+        parserMapping.put(PaymentResponse.class, new PaymentResponseParser());
+        parserMapping.put(PaymentTransactionDetailsResponse.class, new PaymentTransactionDetailsResponseParser());
+    }
 
 }

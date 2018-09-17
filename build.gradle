@@ -11,21 +11,21 @@ compileTestJava.options.encoding = 'UTF-8'
 import org.apache.tools.ant.filters.ReplaceTokens
 
 sourceSets {
-	main { 
-		java { srcDirs 'src' }
-		resources { srcDirs 'resources' }
-	}
-	test {
-		java { srcDirs 'tests' }
-		resources { srcDirs 'testresources' }
-	}
-	examples {
-		java { srcDirs 'examples' }
-	}
+    main {
+        java { srcDirs 'src' }
+        resources { srcDirs 'resources' }
+    }
+    test {
+        java { srcDirs 'tests' }
+        resources { srcDirs 'testresources' }
+    }
+    examples {
+        java { srcDirs 'examples' }
+    }
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 group = 'com.sofort'
@@ -33,38 +33,36 @@ version = '1.1.0'
 archivesBaseName = "sofortlib-java"
 
 dependencies {
-	compile(group: 'commons-logging', name: 'commons-logging', version: '1.2')
-	testRuntime(group: 'log4j', name: 'log4j', version: '1.2.17')
-	testCompile(group: 'org.testng', name: 'testng', version: '6.8.8')
+    testImplementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation(group: 'org.testng', name: 'testng', version: '6.8.8')
 }
 
 task test(overwrite: true, type: Test, dependsOn: clean) {
-	compileJava.mustRunAfter clean
-	useTestNG() {
-		suites 'testng.xml'
-		useDefaultListeners(false)
-		outputDirectory = file('build/test-results')
-	}
-	systemProperty 'log4j.configuration', 'log4j.properties'
-	reports.html.enabled = false
-	reports.junitXml.enabled = false
-	ignoreFailures = true
+    compileJava.mustRunAfter clean
+    useTestNG() {
+        suites 'testng.xml'
+        useDefaultListeners(false)
+        outputDirectory = file('build/test-results')
+    }
+    reports.html.enabled = false
+    reports.junitXml.enabled = false
+    ignoreFailures = true
 }
 
-task sourcesJar(type: Jar, dependsOn:classes) {
-	classifier = 'sources'
-	from sourceSets.main.allSource
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
 }
 
-task testsJar(type: Jar, dependsOn:testClasses) {
-	classifier = 'tests'
-	from sourceSets.test.output
-	from sourceSets.test.allJava
+task testsJar(type: Jar, dependsOn: testClasses) {
+    classifier = 'tests'
+    from sourceSets.test.output
+    from sourceSets.test.allJava
 }
 
-task javadocJar(type: Jar, dependsOn:javadoc) {
-	classifier = 'javadoc'
-	from fileTree('build/docs/javadoc')
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from fileTree('build/docs/javadoc')
 }
 
 task buildAll {
@@ -78,9 +76,9 @@ task prepareSources(type: Copy) {
 
 
 sourceSets {
-  main {
-    java { srcDirs = ['build/src']}
-  }
+    main {
+        java { srcDirs = ['build/src'] }
+    }
 }
 
 compileJava {
@@ -92,64 +90,58 @@ buildAll.dependsOn testsJar
 buildAll.dependsOn sourcesJar
 buildAll.dependsOn javadocJar
 
-task wrapper(type: Wrapper) {
-  gradleVersion = "2.5"
-}
-
 artifacts {
     archives javadocJar, sourcesJar
 }
 
 signing {
-  required { project.hasProperty('signing.keyId') }
-  sign configurations.archives
+    required { project.hasProperty('signing.keyId') }
+    sign configurations.archives
 }
-
-
 
 // upload archives to ossrh (a pre-process of publishing on mavencentral)
 uploadArchives {
-  repositories {
-    mavenDeployer {
-      beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
-      repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-        authentication(userName: ossrhUsername, password: ossrhPassword)
-      }
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
 
-      snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
-        authentication(userName: ossrhUsername, password: ossrhPassword)
-      }
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
 
-      pom.project {
-        name 'sofortlib-java'
-        packaging 'jar'
-        description 'sofortlib-java offers a collection of java tools needed to communicate with the SOFORT API.'
-        url 'https://github.com/sofort/sofortlib-java'
+            pom.project {
+                name 'sofortlib-java'
+                packaging 'jar'
+                description 'sofortlib-java offers a collection of java tools needed to communicate with the SOFORT API.'
+                url 'https://github.com/sofort/sofortlib-java'
 
-        scm {
-          connection 'scm:git:git@github.com:sofort/sofortlib-java.git'
-          developerConnection 'scm:git:git@github.com:sofort/sofortlib-java.git'
-          url 'git@github.com:sofort/sofortlib-java.git'
+                scm {
+                    connection 'scm:git:git@github.com:sofort/sofortlib-java.git'
+                    developerConnection 'scm:git:git@github.com:sofort/sofortlib-java.git'
+                    url 'git@github.com:sofort/sofortlib-java.git'
+                }
+
+                licenses {
+                    license {
+                        name 'GNU LESSER GENERAL PUBLIC LICENSE'
+                        url 'http://www.gnu.org/licenses/lgpl.html'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id developerId
+                        name developerName
+                        email developerEmail
+                        organization developerOrganization
+                        organizationUrl developerOrganizationUrl
+                    }
+                }
+            }
         }
-
-        licenses {
-          license {
-            name 'GNU LESSER GENERAL PUBLIC LICENSE'
-            url 'http://www.gnu.org/licenses/lgpl.html'
-          }
-        }
-
-        developers {
-          developer {
-            id developerId
-            name developerName
-            email developerEmail
-            organization developerOrganization
-            organizationUrl developerOrganizationUrl
-          }
-        }
-      }
     }
-  }
 }

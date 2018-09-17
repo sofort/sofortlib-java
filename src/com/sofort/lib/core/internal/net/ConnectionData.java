@@ -5,5 +5,5 @@ package com.sofort.lib.core.internal.net;
  * because different kinds of connection need the different connection data.
  */
 public interface ConnectionData {
-	/* NoOp */
+    /* NoOp */
 }

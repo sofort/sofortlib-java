@@ -12,21 +12,21 @@ import com.sofort.lib.core.internal.utils.xml.XmlElementParser;
  */
 public class BillcodeStatusHistoryItemParser extends XmlElementParser<BillcodeStatusHistoryItem> {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementParser#parseChildImpl(com
-	 * .sofort.lib.internal.utils.xml.XmlElementParsable)
-	 */
-	@Override
-	protected BillcodeStatusHistoryItem parseChildImpl(XmlElementParsable element) {
-		BillcodeStatusHistoryItem statusHistoryItem = new BillcodeStatusHistoryItem();
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.utils.xml.XmlElementParser#parseChildImpl(com
+     * .sofort.lib.internal.utils.xml.XmlElementParsable)
+     */
+    @Override
+    protected BillcodeStatusHistoryItem parseChildImpl(XmlElementParsable element) {
+        BillcodeStatusHistoryItem statusHistoryItem = new BillcodeStatusHistoryItem();
 
-		statusHistoryItem.setStatus(BillcodeTransactionStatus.get(element.getChildText("status")));
-		statusHistoryItem.setStatusReason(BillcodeTransactionStatusReason.get(element.getChildText("status_reason")));
-		statusHistoryItem.setTime(element.getChildTextAsDate("time"));
+        statusHistoryItem.setStatus(BillcodeTransactionStatus.get(element.getChildText("status")));
+        statusHistoryItem.setStatusReason(BillcodeTransactionStatusReason.get(element.getChildText("status_reason")));
+        statusHistoryItem.setTime(element.getChildTextAsDate("time"));
 
-		return statusHistoryItem;
-	}
+        return statusHistoryItem;
+    }
 }

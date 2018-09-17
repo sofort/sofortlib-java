@@ -5,52 +5,54 @@ package com.sofort.lib.ideal.products.response.parts;
  */
 public class IDealBank {
 
-	/** The code. */
-	private String code;
+    /**
+     * The code.
+     */
+    private String code;
 
-	/** The name. */
-	private String name;
-
-
-	/**
-	 * Gets the code.
-	 * 
-	 * @return the code
-	 */
-	public String getCode() {
-		return code;
-	}
+    /**
+     * The name.
+     */
+    private String name;
 
 
-	/**
-	 * Sets the code.
-	 * 
-	 * @param code
-	 *            the new code
-	 */
-	public void setCode(String code) {
-		this.code = code;
-	}
+    /**
+     * Gets the code.
+     *
+     * @return the code
+     */
+    public String getCode() {
+        return code;
+    }
 
 
-	/**
-	 * Gets the name.
-	 * 
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
-	}
+    /**
+     * Sets the code.
+     *
+     * @param code the new code
+     */
+    public void setCode(String code) {
+        this.code = code;
+    }
 
 
-	/**
-	 * Sets the name.
-	 * 
-	 * @param name
-	 *            the new name
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * Gets the name.
+     *
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+
+    /**
+     * Sets the name.
+     *
+     * @param name the new name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
 
 }

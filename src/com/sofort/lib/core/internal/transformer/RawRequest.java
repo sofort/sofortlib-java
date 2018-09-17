@@ -5,28 +5,29 @@ package com.sofort.lib.core.internal.transformer;
  */
 public class RawRequest {
 
-	/** The content. */
-	private final String content;
+    /**
+     * The content.
+     */
+    private final String content;
 
 
-	/**
-	 * Defines a raw request with the given content.
-	 * 
-	 * @param content
-	 *            the content
-	 */
-	public RawRequest(String content) {
-		this.content = content;
-	}
+    /**
+     * Defines a raw request with the given content.
+     *
+     * @param content the content
+     */
+    public RawRequest(String content) {
+        this.content = content;
+    }
 
 
-	/**
-	 * Gets the content of the raw request.
-	 * 
-	 * @return the content of the raw request.
-	 */
-	public String getContent() {
-		return content;
-	}
+    /**
+     * Gets the content of the raw request.
+     *
+     * @return the content of the raw request.
+     */
+    public String getContent() {
+        return content;
+    }
 
 }

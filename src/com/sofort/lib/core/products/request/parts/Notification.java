@@ -5,55 +5,57 @@ package com.sofort.lib.core.products.request.parts;
  */
 public class Notification {
 
-	/** The target. */
-	private final String target;
+    /**
+     * The target.
+     */
+    private final String target;
 
-	/** The notify on. */
-	private String notifyOn;
-
-
-	/**
-	 * Instantiates a new notification.
-	 * 
-	 * @param target
-	 *            the target
-	 */
-	public Notification(String target) {
-		this.target = target;
-	}
+    /**
+     * The notify on.
+     */
+    private String notifyOn;
 
 
-	/**
-	 * Gets the target.
-	 * 
-	 * @return the target
-	 */
-	public String getTarget() {
-		return target;
-	}
+    /**
+     * Instantiates a new notification.
+     *
+     * @param target the target
+     */
+    public Notification(String target) {
+        this.target = target;
+    }
 
 
-	/**
-	 * Gets the notify on.
-	 * 
-	 * @return the notify on
-	 */
-	public String getNotifyOn() {
-		return notifyOn;
-	}
+    /**
+     * Gets the target.
+     *
+     * @return the target
+     */
+    public String getTarget() {
+        return target;
+    }
 
 
-	/**
-	 * Sets the notify on (read the API documentation to find out the possible
-	 * values).
-	 * 
-	 * @param notifyOn
-	 *            the notify on
-	 * @return the notification
-	 */
-	public Notification setNotifyOn(String notifyOn) {
-		this.notifyOn = notifyOn;
-		return this;
-	}
+    /**
+     * Gets the notify on.
+     *
+     * @return the notify on
+     */
+    public String getNotifyOn() {
+        return notifyOn;
+    }
+
+
+    /**
+     * Sets the notify on (read the API documentation to find out the possible
+     * values).
+     *
+     * @param notifyOn the notify on
+     * @return the notification
+     */
+    public Notification setNotifyOn(String notifyOn) {
+        this.notifyOn = notifyOn;
+        return this;
+    }
 
 }

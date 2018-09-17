@@ -11,19 +11,19 @@ import com.sofort.lib.core.internal.utils.xml.XmlElementParsable;
  */
 public class BillcodeTransactionDetailsResponseParser extends SofortLibResponseParser<BillcodeTransactionDetailsResponse> {
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.parser.XmlResponseParser#parse(com
-	 * .sofort.lib.internal.utils.xml.XmlElementParsable)
-	 */
-	@Override
-	public BillcodeTransactionDetailsResponse parseResponse(XmlElementParsable element) {
-		BillcodeTransactionDetailsResponse response = new BillcodeTransactionDetailsResponse();
+    /*
+     * (non-Javadoc)
+     *
+     * @see
+     * com.sofort.lib.ideal.ideal.refund.refund.billcode.billcode.paycode.paycode.payment.payment.core.core.internal.transformer.parser.XmlResponseParser#parse(com
+     * .sofort.lib.internal.utils.xml.XmlElementParsable)
+     */
+    @Override
+    public BillcodeTransactionDetailsResponse parseResponse(XmlElementParsable element) {
+        BillcodeTransactionDetailsResponse response = new BillcodeTransactionDetailsResponse();
 
-		response.setTransactionDetailsList(new BillcodeTransactionDetailsParser().parseChildren(element, "transaction_details"));
+        response.setTransactionDetailsList(new BillcodeTransactionDetailsParser().parseChildren(element, "transaction_details"));
 
-		return response;
-	}
+        return response;
+    }
 }
