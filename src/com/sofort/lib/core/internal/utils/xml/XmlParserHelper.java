@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -78,6 +79,7 @@ public class XmlParserHelper {
 	public Document parseXml(InputSource inputSource) throws XmlParserHelperException {
 		try {
 			final DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+			docFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
 			return docBuilder.parse(inputSource);
