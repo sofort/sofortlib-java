@@ -93,7 +93,7 @@ buildAll.dependsOn sourcesJar
 buildAll.dependsOn javadocJar
 
 task wrapper(type: Wrapper) {
-  gradleVersion = "2.5"
+  gradleVersion = "3.0"
 }
 
 artifacts {
