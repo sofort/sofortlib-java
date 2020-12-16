@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -47,6 +48,7 @@ public class XmlRendererHelper {
 	protected XmlRendererHelper() throws XmlRendererHelperException {
 		try {
 			final DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+			docFactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
 			docBuilder = docFactory.newDocumentBuilder();
 			document = docBuilder.newDocument();
 			document.setXmlStandalone(true);
